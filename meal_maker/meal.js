@@ -14,10 +14,10 @@ const menu = {
 
     addDishToCourse(courseName, dishName, dishPrice){
         const dish = {
-            name: [],
-            price: []
+            name: dishName,
+            price: dishPrice
         }
-        this._courses[courseName].push(dish)
+        this._courses[courseName].push(dish);
     },
 
     getRandomDishFromCourse(courseName){
@@ -38,7 +38,7 @@ const menu = {
     get appetizers(){
 
     },
-    set appertizers(appetizersIn){
+    set appetizers(appetizersIn){
 
     },
     get mains(){
@@ -57,7 +57,7 @@ const menu = {
 
 }
 
-menu.addDishToCourse('appetizers', 'salad1', 4.5)
+menu.addDishToCourse('appetizers', 'salad1', 4)
 menu.addDishToCourse('appetizers', 'salad2', 5)
 menu.addDishToCourse('appetizers', 'salad3', 6)
 menu.addDishToCourse('main', 'meal1', 10)
