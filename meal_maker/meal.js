@@ -1,4 +1,3 @@
-
 const menu = {
     _courses: {
         _appetizers: [],
@@ -8,15 +7,12 @@ const menu = {
     get appetizers (){
         return this._courses._appetizers;
     },
-    // set appetizers (appetizer){},
     get mains (){
         return this._courses._mains;
     },
-    // set mains (main){},
     get desserts (){
         return this._courses._desserts;
     },
-    // set desserts (dessert){},
     get courses (){
         const allCourses = this._courses._appetizers.concat(this._courses._mains, this._courses._desserts);
         let arrIndex = 0;
